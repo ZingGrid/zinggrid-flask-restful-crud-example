@@ -2,6 +2,7 @@
 
 Create a REST endpoint with Python Flask Restful and have a working UI component enabling CRUD functionality in minutes!
 
+![](https://d2ddoduugvun08.cloudfront.net/items/3r3a2x2s0w2s2a0W2c2B/Screen%20Recording%202020-02-10%20at%2003.25%20PM.gif)
 
 ## System Requirements
 
@@ -32,11 +33,20 @@ You'll find the user guide and all documentation [here](https://flask-restful.re
 
 #### Localhost Links
 
-The root UI is at http://localhost:5000/
+The root UI is at http://localhost:5000/ and that file is `templates/zinggrid.html`
 
-The API urls are:
+The TODO List API urls are:
 - GET http://localhost:5000/todos
 - POST http://localhost:5000/todos
-- PUT http://localhost:5000/todos/:id
-- GET http://localhost:5000/todos/:id
-- DELETE http://localhost:5000/todos/:id
+- PUT http://localhost:5000/todos/:todo_id
+- PATCH http://localhost:5000/todos/:todo_id
+- GET http://localhost:5000/todos/:todo_id
+- DELETE http://localhost:5000/todos/:todo_id
+
+The TODO List API urls are:
+- GET http://localhost:5000/heroes
+- POST http://localhost:5000/heroes
+- PUT http://localhost:5000/heroes/:id
+- PATCH http://localhost:5000/heroes/:id
+- GET http://localhost:5000/heroes/:id
+- DELETE http://localhost:5000/heroes/:id

@@ -10,12 +10,30 @@
         <h1>{{ title }}</h1>
         <hr>
         <zing-grid 
-            caption="Python Flask REST Example"
+            caption="Python Flask Dictionaries Demo"
             src="/todos"
             editor-controls>
-            <zg-data>
-                <zg-param name="urlSuffix" value="/"></zg-param>
-            </zg-data>
+            <zg-colgroup>
+                <zg-column index="recordkey"></zg-column>
+                <zg-column index="task"></zg-column>
+            </zg-colgroup>
+        </zing-grid>
+        
+        <hr>
+        <p>
+            The heroes grid will use an array of objects instead of an object
+            of objects like the above example.
+        </p>
+        <zing-grid 
+            caption="Python Flask Array of Dictionaries Demo"
+            src="/heroes"
+            editor-controls>
+            <zg-colgroup>
+                <!-- How to exclude id from requests and updating -->
+                <!-- <zg-column index="id" type="recordkey"></zg-column> -->
+                <zg-column index="name" type="text"></zg-column>
+                <zg-column index="age" type="number"></zg-column>
+            </zg-colgroup>
         </zing-grid>
     </body>
 </html>
